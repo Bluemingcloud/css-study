@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            border: 1px solid #777;
+            width: 300px;
+            height: 300px;
+
+            color: #ff0000; /* 글씨색 */
+            background-color: #ffff00; /* 배경색 */
+            background-image: url(../05디스플레이/img/css3.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        .box:hover {
+            background-image: url(../05디스플레이/img/html5.png);
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .box:active {
+            background-image: url(../05디스플레이/img/jquery.png);
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="box">
+        오늘 점심은 뭐먹지?
+    </p>
+    
+</body>
+</html>

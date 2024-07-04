@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text-box {
+            border: 1px solid #777;
+            height: 100px;
+            width: 300px;
+            overflow: visible; /* 기본값 */
+            overflow: scroll; /* 무조건 스크롤을 만든다 */
+            overflow: hidden; /* 넘치는 영역을 숨긴다 */
+            overflow: auto; /* 공간이 남으면 그대로, 넘치면 스크롤을 만든다 */
+        }
+
+        .table-box {
+            border: 1px solid #777;
+            height: 100px;
+            width: 300px;
+            overflow-x: auto; /* x축으로 스크롤을 자동으로 만듬 */
+            white-space: nowrap; /* 가로 줄바꿈을 방지 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p class="text-box">
+        인생에는 적극적인 의미의 즐거움, 행복이란 것이 존재하지 않는다.
+        다만 고통과 권태가 있을 뿐이다.
+        파티와 구경거리와 흥분되는 일들로 가득차 보이는 세상살이도
+        그 이면의 실상을 알고 보면 고통과 권태 사이를 왔다갔다 하는
+        단조로운 시계추의 운동과 다를 바 없는 것이다.
+        세상의 사이비 강단 철학자들은 인생에 진정한 행복과 희망과 가치와
+        보람이 있는 것처럼 열심히 떠들어대지만 나의 철학은 그러한 행복은
+        존재하지 않는다는 것을 명확히 가르침으로써 사람들로 하여금 더 큰
+        불행에 빠지지 않도록 하려는 것을 그 사명으로 한다.
+        인생에는 다만 고통이 있을 뿐이다.
+        가능한 한 그러한 고통을 피해가는 것이 삶의 지혜이고 예지이다.
+        그러므로 고통의 일시적 부재인 소극적 의미의 행복만이 인생에
+        주어질 수 있는 최상의 것이고, 현자의 도리는 바로 그러한 소극적
+        행복만을 추구하는 것이다.
+    </p>
+
+    <div class="table-box">
+        <table border="1">
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+            <tr>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+                <td>데이터</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
