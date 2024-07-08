@@ -1,0 +1,122 @@
+@import url(default.css);
+
+.wrap {border-top: 3px solid #00d344;}
+.wrap .header {border-bottom: 1px solid #e3e3e3;}
+.wrap .header .top {width: 1008px; margin: 0 auto;}
+
+.header .top {overflow: hidden;}
+.header .top .top-left {float: left; color: #999; font-size: 14px; padding: 9px 7px;}
+.header .top .top-left a span {
+    /* border: 1px solid #777; */
+    display: block;
+    width: 80px;
+    height: 20px;
+    background-image: url(../img/head_menu_201014.png); 
+    background-repeat: no-repeat;
+    background-position: 15px -27px;
+    text-indent: -9999px;
+}
+.header .top .top-left:hover {cursor: pointer;}
+.header .top .top-right {float: right;}
+
+.top-right > ul > li {display: inline; border-left: 1px solid #999;}
+.top-right > ul > li:nth-child(1) {border: none;}
+.top-right > ul > li > a {
+    display: inline-block; 
+    padding: 9px 7px;
+}
+.top-right > ul > li > a > span {
+    /* 붙여쓰기도 선택자 - span태그 클래스명 m1 */
+    /* border: 1px solid #777; */
+    box-sizing: border-box;
+    display: block;
+    width: 80px;
+    height: 18px;
+    background-image: url(../img/head_menu_201014.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+
+.top-right > ul > li > a > span.m1 {background-position: 1px -55px;}
+.top-right > ul > li > a > span.m2 {background-image: url(../img/head_menu_benefit.png); background-position: 13px 5px;}
+.top-right > ul > li > a > span.m3 {background-position: 23px -116px;}
+.top-right > ul > li > a > span.m4 {background-position: 17px -148px;}
+
+.top-right > ul > li > a > span.m1:hover {background-position: -149px -55px;}
+.top-right > ul > li > a > span.m2:hover {background-image: url(../img/head_menu_benefit.png); background-position: 13px 5px;}
+.top-right > ul > li > a > span.m3:hover {background-position: -127px -116px;}
+.top-right > ul > li > a > span.m4:hover {background-position: -133px -148px;}
+
+
+.header .mid {overflow: hidden; width: 1008px; margin: 0 auto;}
+.header .mid .mid-left {float: left; overflow: hidden;}
+.header .mid .mid-right {float: right;}
+
+.header .mid fieldset {
+    width: 330px;
+    height: 40px;
+    margin: 36px 0 0 11px;
+    background-image: url(../img/bg_cmn_search322.png);
+    background-repeat: no-repeat;
+    border: none;
+}
+.mid-left > input {
+    float: left; 
+    margin: 7px 0 0 18px; 
+    width: 249px; 
+    height: 25px; 
+    display: block; 
+    border: none;
+}
+.mid-left > button {
+    float: right;
+    background-image: url(../img/btn_search_bar.png);
+    background-position: 0 0;
+    display: block;
+    width: 45px;
+    height: 40px;
+    background-repeat: no-repeat;
+    border: none;
+    text-indent: -9999px;
+    background-color: #fff;
+}
+.mid-left > button:hover {
+    cursor: pointer;
+}
+
+.header .bottom {overflow: hidden; width: 1008px; margin: 0 auto;} 
+.header .bottom .bottom-left {float: left; overflow: hidden; width: 75%;}
+.header .bottom .bottom-right {float: right;}
+.bottom ul li {display: inline;}
+.bottom ul li a {display: inline-block;}
+.bottom-left > li > a > span {
+    box-sizing: border-box;
+    display: block;
+    width: 72px;
+    height: 55px;
+    /* border: 1px solid #777; */
+    background-image: url(../img/gnb_menu_230622.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+.bottom-left li:nth-child(1) a span {background-position: 0 1px;}
+.bottom-left li:nth-child(2) a span {background-position: -87px 1px;}
+.bottom-left li:nth-child(3) a span {background-position: -174px 1px;}
+.bottom-left li:nth-child(4) a span {background-position: -256px 1px;}
+.bottom-left li:nth-child(5) a span {background-position: -331px 1px;}
+.bottom-left li:nth-child(6) a span {background-position: -420px 1px;}
+.bottom-left li:nth-child(7) a span {background-position: -506px 1px;}
+.bottom-left li:nth-child(8) a span {background-position: -592px 1px;}
+.bottom-left li:nth-child(9) a span {background-position: -673px 1px;}
+
+.bottom-left li:nth-child(1) a span:hover {background-position: 0 -69px;}
+.bottom-left li:nth-child(2) a span:hover {background-position: -87px -69px;}
+.bottom-left li:nth-child(3) a span:hover {background-position: -174px -69px;}
+.bottom-left li:nth-child(4) a span:hover {background-position: -256px -69px;}
+.bottom-left li:nth-child(5) a span:hover {background-position: -331px -69px;}
+.bottom-left li:nth-child(6) a span:hover {background-position: -420px -69px;}
+.bottom-left li:nth-child(7) a span:hover {background-position: -506px -69px;}
+.bottom-left li:nth-child(8) a span:hover {background-position: -592px -69px;}
+.bottom-left li:nth-child(9) a span:hover {background-position: -673px -69px;}

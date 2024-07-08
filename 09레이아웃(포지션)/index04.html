@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        ul, li {list-style: none;}
+        .header {text-align: center; position: fixed; left: 0; top: 0; width: 100%; background-color: #fff;}
+
+        .nav ul {background-color: black; height: 42px;}
+        .nav ul li {display: inline;}
+        .nav ul li a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 20px; /* 위아래, 좌우 */
+            /* border-bottom: 3px solid #000; */
+            /* box-sizing: border-box; */
+        }
+        .nav ul li a:hover {border-bottom: 3px solid #fff;}
+
+        .top-btn {
+            position: fixed; 
+            right: 30px;
+            bottom: 30px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: aqua;
+        }
+        .top-btn a {text-decoration: none; color: #fff;}
+        .top-btn a:hover {color: #000;}
+
+        .menus {
+            background-color: green;
+            position: sticky;
+            /*
+            1. 필수적으로 top, bottom, left, right 중에 1개가 있어야함 (브라우저가 해당 높이가 될 때 fixed 속성으로 바뀜)
+            2. fixed 가 적용된 부모속성에 overflow: hidden 이 있으면 적용되지 않음.
+            */
+            top: 142px;
+        }
+        .menus ul li a {
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;            
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 포지션 fixed -->
+    <!-- 포지션 sticky - 특정높이에서는 static 속성처럼 행동하다가, 특정 높이가 되면 fixed 가 되는 속성 -->
+    <header class="header">
+        <div class="logo">
+            <img src="../img/bgimg.png" alt="로고">
+        </div>
+        
+        <div class="nav">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section style="margin-top: 142px;">
+        <div style="height: 1000px;">
+            내용1
+        </div>
+        <div class="nav menus" style="text-align: center;">
+            <ul style="background-color: #f2f2f2;">
+                <li><a href="#">상품상세</a></li>
+                <li><a href="#">상품평</a></li>
+                <li><a href="#">상품문의</a></li>
+                <li><a href="#">배송/교환/반품 안내</a></li>
+            </ul>   
+        </div>
+        <div style="height: 2000px;">
+            내용2
+        </div>
+    </section>
+
+    <div class="top-btn">
+        <a href="#">TOP</a>
+    </div>
+</body>
+</html>
