@@ -1,0 +1,68 @@
+* {padding: 0; margin: 0;}
+ul, li {list-style: none;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+
+#wrap {
+    border: 1px solid #777;
+    margin: 0 auto;
+}
+
+#wrap .logo {
+    height: 280px;
+    background-image: url(../images/bg.png);
+}
+
+#wrap .logo h3 {
+    color: #fdd338;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+#wrap .nav {background-color: #c13333;}
+#wrap .nav > ul {overflow: hidden;}
+#wrap .nav > ul > li > a {
+    padding: 20px 30px;
+    color: #fff;
+    cursor: pointer;
+}
+#wrap .nav > ul > li > a:hover {
+    background-color: #903;
+}
+#wrap #section {overflow: hidden;}
+
+#wrap #section > .left {float: left; padding: 20px; box-sizing: border-box;}
+
+#footer {
+    background-color: #222222;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* 767px 이상 (웹) */
+@media(min-width: 767px) {
+
+    #wrap {width: 960px;}
+
+    #wrap .nav > ul > li {display: inline; float: left;}
+    #wrap .nav > ul > li > a {display: inline-block;}
+
+    #wrap #section > .left {width: 760px;}
+    #wrap #section > .right {float: right; width: 200px;}
+
+}
+
+/* 766px 이하 (모바일) */
+@media(max-width: 766px) {
+
+    #wrap {min-width: 350px;}
+
+    #wrap .nav > ul > li {display: block; float: left; width: 100%; text-align: center;}
+    #wrap .nav > ul > li > a {display: block;}
+
+    #wrap #section > .left {width: 100%;}
+    #wrap #section > .right {float: left; width: 100%; padding: 20px; box-sizing: border-box;}
+    #wrap #section > .right img {display: block; width: 100%; height: auto; margin: 5px 0;}
+
+}

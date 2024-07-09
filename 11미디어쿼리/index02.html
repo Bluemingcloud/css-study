@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        * {padding: 0; margin: 0; box-sizing: border-box;}
+
+        .box {overflow: hidden; width: 80%; margin: 0 auto; padding: 5px;}
+        .box .card {float: left; transition: 0.2s ease; padding: 5px;}
+
+        /* 1240px 이상에서 동작 (웹) */
+        @media(min-width: 1240px) {
+            .box .card {width: 16.6666%;}
+        }
+
+        /* 767px 이상 1239px 이하에서 동작 (태블릿) */
+        @media(max-width: 1239px) and (min-width: 767px) {
+            .box .card {width: 25%;}
+        }
+
+        /* 766px 이하에서 동작 (모바일) */
+        @media(max-width: 766px) {
+            .box .card {width: 50%;}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        웹환경에서는 6개씩
+        태블릿환경에서는 4개씩
+        모바일환경에서는 2개씩
+
+    -->
+
+    <div class="box">
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>
+        <div class="card">
+            <div>박스</div>
+        </div>          
+        
+    </div>
+    
+</body>
+</html>
