@@ -1,0 +1,135 @@
+#header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+#my-slide {
+    margin-top: 52px;
+}
+.my-header {
+    background-color: #263238;
+    border-color: #263238;
+    border-radius: 0;
+    margin-bottom: 0;
+    
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #304047;
+}
+
+/* 슬라이드 인디케이터 */
+.my-indicators {
+    z-index: 9;
+}
+
+/* 드롭다운 메뉴 active 시 */
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #304047;
+}
+
+/* ======로고====== */
+.my-logo {
+    padding: 10px 15px;
+}
+
+/* ======슬라이드====== */
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+
+/* ======HOT 상품 섹션====== */
+.prod-list {
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+}
+.prod-link {
+    border: 1px solid #e3e3e3;
+    display: block;
+}
+.prod-wrap {
+    padding: 5px;
+    position: relative;
+}
+.prod-wrap .arrow {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    background-color: #e3e3e3;
+    color: #fff;
+    line-height: 1rem;
+}
+.prod-wrap .hover {
+    opacity: 0; /* 안보임 */
+    background-color: #337ab7;
+}
+.prod-link:hover {
+    border-color: #337ab7;
+}
+.prod-link:hover .arrow {
+    opacity: 0;
+}
+.prod-link:hover .hover {
+    opacity: 1;
+}
+
+/* ======블로그 스타일 상품====== */
+@media(min-width: 768px) {
+    .blog-style.col-sm-2 {
+        width: 20%;
+    }
+}
+.blog-style {
+    margin-bottom:15px;
+}
+
+.blog-inner {
+    border: 1px solid #e3e3e3;
+    position: relative;
+}
+.blog-inner .blog-img-box > img {
+    margin: 0 auto;
+}
+.blog-content {
+    padding: 10px;
+}
+.blog-content > p {
+    height: 30px;
+    white-space: nowrap; /* 한줄로 처리 */
+    text-overflow: ellipsis; /* 넘치는 부분 ... 으로 나타냄 */
+    overflow: hidden; /* 영역 밖은 숨김 */
+}
+.blog-price {overflow: hidden;}
+.blog-price > ul {float: left;}
+.blog-price > strong {float: right;}
+
+.blog-price > ul > li {
+    display: inline-block;
+}
+.blog-price > ul > li > i {
+    color: #FDCC11;
+}
+.blog-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 10px;
+    opacity: 0;
+}
+
+.blog-hover > a {
+    color: #fff;
+}
+.blog-inner:hover .blog-hover { /* hover 처리 */
+    opacity: 1;
+}

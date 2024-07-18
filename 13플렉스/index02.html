@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .box .item {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>justify-content(주축 정렬 - direction으로 주축이 결정됨)</h3>
+    <style>
+        .container1 {
+            display: flex;
+            /* 주축은 row */
+            justify-content: flex-start; /* 기본값 flex-start */
+        }
+    </style>
+    <p>flex-start(기본)</p>
+    <div class="container1 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+    <style>
+        .container2 {
+            display: flex;
+            /* 주축은 row */
+            justify-content: flex-end;
+        }
+    </style>
+    <p>flex-end</p>
+    <div class="container2 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container3 {
+            display: flex;
+            /* 주축은 row */
+            justify-content: center;
+        }
+    </style>
+    <p>center</p>
+    <div class="container3 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container4 {
+            display: flex;
+            /* 주축은 row */
+            justify-content: space-between;
+        }
+    </style>
+    <p>space-between</p>
+    <div class="container4 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container5 {
+            display: flex;
+            height: 300px;
+
+            /* 주축이 column */
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+    <p>flex-direction: column (주축을 column 으로)</p>
+    <div class="container5 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr>
+
+    <h3>align-item (교차축 정렬 - 한 줄)</h3>
+    <style>
+        .container6 {
+            display: flex;
+            height: 100px;
+
+            align-items: flex-start; /* 기본값 stretch */
+        }
+    </style>
+    <p>align-items: flex-start;</p>
+    <div class="container6 box">
+        <div class="item" style="height: 50px;">hello</div>
+        <div class="item" style="height: 30px;">world</div>
+        <div class="item" style="height: 20px;">flex</div>
+    </div>
+
+    <style>
+        .container7 {
+            display: flex;
+            height: 100px;
+
+            align-items: flex-end; /* 기본값 stretch */
+        }
+    </style>
+    <p>align-items: flex-end;</p>
+    <div class="container7 box">
+        <div class="item" style="height: 50px;">hello</div>
+        <div class="item" style="height: 30px;">world</div>
+        <div class="item" style="height: 20px;">flex</div>
+    </div>
+
+    <style>
+        .container8 {
+            display: flex;
+            height: 100px;
+
+            align-items: center; /* 기본값 stretch */
+        }
+    </style>
+    <p>align-items: center;</p>
+    <div class="container8 box">
+        <div class="item" style="height: 50px;">hello</div>
+        <div class="item" style="height: 30px;">world</div>
+        <div class="item" style="height: 20px;">flex</div>
+    </div>
+
+    <style>
+        .container9 {
+            display: flex;
+            height: 100px;
+
+            align-items: baseline; /* 기본값 stretch */
+            /* baseline 은 글자에 맞춰서 정렬 */
+        }
+    </style>
+    <p>align-items: baseline;</p>
+    <div class="container9 box">
+        <div class="item" style="height: 50px;">hello</div>
+        <div class="item" style="height: 30px;">world</div>
+        <div class="item" style="height: 20px;">flex</div>
+    </div>
+
+    <style>
+        .container10 {
+            display: flex;
+            height: 100px;
+
+            flex-direction: column;
+            align-items: center; /* 기본값 stretch */
+            /* baseline 은 글자에 맞춰서 정렬 */
+        }
+    </style>
+    <p>flex-direction: column; (주축을 column)</p>
+    <div class="container10 box">
+        <div class="item" style="height: 50px;">hello</div>
+        <div class="item" style="height: 30px;">world</div>
+        <div class="item" style="height: 20px;">flex</div>
+    </div>
+
+    <hr>
+
+    <h3>align-content (교차축 정렬 - 여러줄)</h3>
+    
+    <style>
+        .container11 {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            flex-wrap: wrap;
+
+            align-content: stretch; /* 기본값 stretch 속성이 justify-content 와 비슷함*/ 
+        }
+    </style>
+    <p>align-content: stretch;</p>
+    <div class="container11 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container12 {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            flex-wrap: wrap;
+
+            align-content: flex-start;
+        }
+    </style>
+    <p>align-content: flex-start;</p>
+    <div class="container12 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container13 {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            flex-wrap: wrap;
+
+            align-content: flex-end;
+        }
+    </style>
+    <p>align-content: flex-end;</p>
+    <div class="container13 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container14 {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            flex-wrap: wrap;
+
+            align-content: space-around;
+        }
+    </style>
+    <p>align-content: space-around;</p>
+    <div class="container14 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container15 {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            flex-wrap: wrap;
+
+            align-content: space-between;
+        }
+    </style>
+    <p>align-content: space-between;</p>
+    <div class="container15 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <style>
+        .container16 {
+            display: flex;
+            height: 200px;
+            width: 600px;
+            flex-wrap: wrap;
+
+            align-content: center;
+        }
+    </style>
+    <p>align-content: center;</p>
+    <div class="container16 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+</body>
+</html>

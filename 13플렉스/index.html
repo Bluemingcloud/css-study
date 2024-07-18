@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html3 lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .box .item {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>flex vs inline flex</h3>
+    <style>
+        .container1 {
+            display: flex;
+        }
+    </style>
+    <p>flex</p>
+    <div class="container1 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+    <style>
+        .container2 {
+            display: inline-flex;
+        }
+    </style>
+    <p>inline-flex</p>
+    <div class="container2 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr>
+
+    <style>
+        .container3 {
+            display: flex;
+            width: 300px;
+        }
+        .container3-row {
+            /* 기본값 row */
+            flex-direction: row;
+        }
+        .container3-column {
+            flex-direction: column; 
+        }
+    </style>
+    <h3>flex-direction (주축의 방향)</h3>
+    <p>기본 row</p>
+    <div class="container3 container3-row box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+    <p>column 방향</p>
+    <div class="container3 container3-column box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr>
+
+    <style>
+        .container4 {
+            display: flex;
+            /* flex-direction: column; */
+            width: 300px;
+            flex-wrap: wrap; /* 기본값 nowrap(한줄로 표시) */
+        }
+    </style>
+    <h3>flex-wrap (줄바꿈 여부)</h3>
+    <div class="container4 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>        
+    </div>
+
+    <h3>flex-flow (direction + wrap)</h3>
+
+    <style>
+        .container5 {
+            display: flex;
+            flex-flow: row nowrap; /* direction, 줄바꿈없음 */
+        }
+    </style>
+
+    <div class="container5 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+
+    </div>
+</body>
+</html3
